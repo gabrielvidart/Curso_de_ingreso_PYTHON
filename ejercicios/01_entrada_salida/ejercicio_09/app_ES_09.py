@@ -47,12 +47,10 @@ class App(customtkinter.CTk):
         incremento = float (incremento)
 
         incremento_sueldo = sueldo * incremento / 100
-
         sueldo_resultado = sueldo + incremento_sueldo 
 
-        mensaje = "el nuevo sueldo es"
-
-        alert (title="ejemplo", message= resultado)
+        mensaje = "el nuevo sueldo es {0}". format(sueldo_resultado)
+        alert (title="ejemplo", message= mensaje)
 
 
     
